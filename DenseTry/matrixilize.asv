@@ -1,0 +1,6 @@
+q = cell(1,size(fin));
+for j = 1:60000
+    q{j} = fin_output(j,:);
+    q{j} = reshape(q{j},28,28);
+    q{j} = q{j}';
+end
